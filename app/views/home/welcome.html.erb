@@ -1,0 +1,6 @@
+<h1>Boas-vindas à Task List!</h1>
+<h3>Sua lista de tarefas: </h3>
+
+<% @tasks.each do |task| %>
+  <%= "- #{task.description}" %><br>
+<% end %>
