@@ -2,5 +2,7 @@
 <h3>Sua lista de tarefas: </h3>
 
 <% @tasks.each do |task| %>
-  <%= "- #{task.description}" %><br>
+  <%= "- #{task.description}" %>
+  <%= link_to 'Editar', edit_task_path(task) %><br>
 <% end %>
+
